@@ -59,11 +59,124 @@ body{
     color:white;
 }
 
-/* Desktop device */
+h1{
+    color:white;
+    font-style:italic;
+}
+
+p{
+    color:white;
+}
+
+/* 
+Mobile device 
+*/
+@media (max-width:768px){
+    #topWrapper{
+        min-height:48px;
+    }
+    
+    #topMenuBox_1{
+        /*background-color:#000000;*/
+        height:40px;
+    }
+    
+    #logo{
+        float:left;
+        width:200px;
+        height:70px;
+        cursor:pointer;
+    }
+    
+    #logo > img {
+        height:30px;
+        margin-top:10px;
+        margin-left:0px;
+    }
+    
+    #topMenuBtnBox{
+        display:none;
+    }
+    
+    #mobileMenuBtnBox{
+        display:none;
+        position: fixed;
+	    width: 150px;
+	    height: 100%;
+	    margin: 0px;
+	    padding: 0px;
+	    top: 64px;
+	    left: 450px;
+	    z-index: 99;
+    }
+    
+    .topMenuBtn{
+        display:block;
+        float:left;
+        font-family:nseb;
+        font-size:20px;
+        color:#FFFFFF;
+        min-width:150px;
+        margin:0px;
+        margin-left:3px;
+        padding:25px 10px 13px 10px;
+        cursor:pointer;
+        text-align:center;
+    }
+    
+    .topMenuBtn:hover{
+        color:#FF0000;
+        border-bottom:3px solid #FF0000;
+    }
+    
+    .topMenuBtn.seleted{
+        color:#FF0000;
+        border-bottom:3px solid #FF0000;
+    }
+    
+    .spinnerMaster {
+        display:block;
+        float:right;
+    }
+    
+    .swiper-container {
+        max-width: 80%;
+        height:240px;
+        /*border:5px solid silver;*/
+        border-radius:7px;
+        box-shadow:0 0 20px #ccc inset;
+    }
+    
+    .swiper-slide {
+        text-align:center;
+        display:flex; /* 내용을 중앙정렬 하기위해 flex 사용 */
+        align-items:center; /* 위아래 기준 중앙정렬 */
+        justify-content:center; /* 좌우 기준 중앙정렬 */
+    }
+    
+    .swiper-slide img {
+        box-shadow:0 0 5px #555;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #introduce_section img{
+        width:100%;
+    }
+}
+
+/* 
+Desktop device 
+*/
 @media all and (min-width:768px){   
     td > textarea {
 		width:100%;
 	}
+    
+    #introduce_section img{
+        width:70%;
+    }
+
 	
 	.spinnerMaster {
 		display:none;
@@ -83,6 +196,10 @@ body{
 		float:right;
         /*margin-top:39px;*/
 	}
+    
+    #mobileMenuBtnBox{
+        display:none;
+    }
     
     #logo{
         float:left;
@@ -117,7 +234,7 @@ body{
     
     .topMenuBtn.seleted{
         color:#FF0000;
-        border-bottom:3px solid #00B09E;
+        border-bottom:3px solid #FF0000;
     }
     
     #subMenuNavBox{
@@ -153,16 +270,56 @@ body{
         flex-wrap: wrap;
         justify-content: space-around;
     }
-}
-
-
-/* Mobile device */
-@media (max-width:768px){
-    #topMenuBox_1{
-
+    
+    /****************************************************************************
+     * 이미지 슬라이더
+     ***************************************************************************/
+    .swiper-container {
+        width: 50%;
+        height:360px;
+        /*border:5px solid silver;*/
+        border-radius:7px;
+        box-shadow:0 0 20px #ccc inset;
+    }
+    .swiper-slide {
+        text-align:center;
+        display:flex; /* 내용을 중앙정렬 하기위해 flex 사용 */
+        align-items:center; /* 위아래 기준 중앙정렬 */
+        justify-content:center; /* 좌우 기준 중앙정렬 */
+    }
+    .swiper-slide img {
+        box-shadow:0 0 5px #555;
+        width: 100%;
+        height: 100%;
+    }
+    
+    /****************************************************************************
+     * 갤러리용 -> 추후 CSS 분리할것
+     ***************************************************************************/
+    #galleryWrapper{
+        text-align: center;
+        min-height: 800px;
+        
+    }
+    
+    #gallery_top{
+        
+    }
+    
+    #gallery_items{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .item{
+        flex:1;
+    }
+    
+    .item img{
+        box-shadow:0 0 5px #555;
+        width: 300px;
+        height: 300px;
     }
 
-    #topMenuBox_2{
-
-    }
 }
