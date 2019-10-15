@@ -3,16 +3,19 @@
 /*
 All device
 */
+body{
+    background-image:url("../image/body_bg_04.jpg");
+}
 
-#container{
+#wrapper{
     min-width:320px;
-    max-width:100%;
-    background-color:#f2f2f2;
+    max-width:60%;
+    background-color:#00000000;
     margin:0px auto;
     padding: 0px;
 }
 
-#top_container{
+#topWrapper{
     clear:both;
 	padding:0px;
 	margin:0px auto;
@@ -25,7 +28,7 @@ All device
 	padding:0px;
 	margin:0px;
 	min-height:100px;
-	background-image:url("../image/bgPattern.jpg");
+	/*background-image:url("../image/bgPattern.jpg");*/
 }
 
 #slider_section{
