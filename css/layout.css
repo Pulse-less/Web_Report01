@@ -163,6 +163,46 @@ Mobile device
     #introduce_section img{
         width:100%;
     }
+    
+     /****************************************************************************
+     * 갤러리용 -> 추후 CSS 분리할것
+     ***************************************************************************/
+    #galleryWrapper{
+        text-align: center;
+        min-height: 800px;
+        
+    }
+    
+    #gallery_top{
+        
+    }
+    
+    #gallery_items{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .item{
+        flex:1;
+    }
+    
+    .item img{
+        box-shadow:0 0 5px #555;
+        width: 200px;
+        height:200px;
+    }
+    
+    #video_entry{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    iframe{
+        height:200px;
+        width:200px;
+    }
 }
 
 /* 
