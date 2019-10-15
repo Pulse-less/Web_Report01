@@ -170,11 +170,6 @@ Mobile device
     #galleryWrapper{
         text-align: center;
         min-height: 800px;
-        
-    }
-    
-    #gallery_top{
-        
     }
     
     #gallery_items{
@@ -189,8 +184,8 @@ Mobile device
     
     .item img{
         box-shadow:0 0 5px #555;
-        width: 200px;
-        height:200px;
+        width: 180px;
+        height: 180px;
     }
     
     #video_entry{
@@ -338,12 +333,7 @@ Desktop device
      ***************************************************************************/
     #galleryWrapper{
         text-align: center;
-        min-height: 800px;
-        
-    }
-    
-    #gallery_top{
-        
+        min-height: 800px;   
     }
     
     #gallery_items{
