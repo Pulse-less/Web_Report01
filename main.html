@@ -9,21 +9,11 @@
     <!--<script src="js/swiper/swiper.jquery.umd.js"></script>-->
     <script>
         $(document).ready(function(){
+            /*페이지 인클루드 -> error*/
            /* $("#header").load("common/topMenu.html"); 
             $("#footer").load("common/footer.html");*/
         
             //swiper 설정
-            /*function setSwiper() {
-                var swiper = new Swiper(".swiper-container", {
-                    pagination: ".swiper-pagination",
-                    nextButton: ".swiper-button-next",
-                    prevButton: ".swiper-button-prev",
-                    paginationClickable: true, 
-                    autoplay: 3000,
-                    autoplayDisableOnInteraction: false
-                });
-            }*/
-
             var mySwiper = new Swiper('.swiper-container',{
                 grabCursor: true,
                 direction: 'horizontal',
@@ -42,6 +32,7 @@
             })
         });
         
+        /*햄버거 메뉴용*/
         function mobileMenuClick(){
             if(!$("spinnerForm").is("checked")){
                 $("#topMenuBox_2").show();
@@ -49,6 +40,7 @@
                 $("#topMenuBox_2").hide();
             }
         }
+        
     </script>
     <!--<link href="js/swiper/swiper.jquery.min.js"/>-->
     <link rel="stylesheet" type="text/css" href="css/common.css"/>
@@ -65,11 +57,11 @@
                 <div id="topMenuBox_1">
                    <div id="topMenuBox">
                         <!--logo-->
-                        <div id="logo" onclick=""><img src=""></div>
+                        <div id="logo" onclick="location.href='main.html';"><img src="image/t1_logo.png"></div>
                         <!--menuBtn-->
                         <div id="topMenuBtnBox">
-                            <div class="topMenuBtn">커뮤니티</div>
-                            <div class="topMenuBtn">소개</div>
+                            <div class="topMenuBtn">게시판</div>
+                            <div class="topMenuBtn">갤러리</div>
                         </div>
                     </div>
                 </div>
@@ -86,11 +78,11 @@
                     </div>
                     <div id="subMenuNavBox">
                         <div id="subMenuNav_1" class="subMenuNav">
-                            <span>자유 게시판</span>
+                            <span>게시판</span>
                             <span>갤러리</span>
                         </div>
                         <div id="subMenuNav_2" class="subMenuNav">
-                            <span>만든이 소개</span>
+                            
                         </div>
                     </div>
                 </div>
@@ -101,49 +93,44 @@
        <!--컨텐츠-->
        <div id="contents">
            <div id="slider_section">
-               <div id="commonImgLayerMain">
-                   <div class="swiper-container">
-                       <div class="swiper-wrapper">
-                           <div class="swiper-slide"><img src="image/t1_roster_1.jpg"></div>
-                           <div class="swiper-slide"><img src="image/t1_roster_2.jpg"></div>
-                        </div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-scrollbar"></div>
+               <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="image/t1_roster_1.jpg"></div>
+                        <div class="swiper-slide"><img src="image/t1_roster_2.jpg"></div>
                     </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-scrollbar"></div>
                 </div>
            </div>
            
            <div id="introduce_section">
-               <div class="section">
                    <div class="introduce_entry">
-                       <h1 class="section-title">팀 소개 타이틀</div>
-                       <p>첫번째 특징 설명문 어쩌구저쩌구</p>
-                       <img src="http://file.thisisgame.com/upload/nboard/news/2014/04/04/20140404111811_7782.jpg"/>
+                       <h1 class="section-title">팀 소개 타이틀</h1>
+                        <p>첫번째 특징 설명문 어쩌구저쩌구</p>
+                        <img src="http://file.thisisgame.com/upload/nboard/news/2014/04/04/20140404111811_7782.jpg">
                    </div>
-               </div>
-           </div>
+            </div>
            
-           <div id="video_section">
-               <div class="section">
-                   <div id="video_entry">
-                       <div class="clip"><iframe width="370" height="315" src="https://www.youtube.com/embed/BIYIDnyggwQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                       <div class="clip"><iframe width="370" height="315" src="https://www.youtube.com/embed/BIYIDnyggwQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                       <div class="clip"><iframe width="370" height="315" src="https://www.youtube.com/embed/BIYIDnyggwQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                       <div class="clip"><iframe width="370" height="315" src="https://www.youtube.com/embed/BIYIDnyggwQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                   </div>
-               </div>
+           <div id="video_section" >
+               <div id="video_entry">
+                    <div class="clip"><iframe width="400" height="315" src="https://www.youtube.com/embed/BIYIDnyggwQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="clip"><iframe width="400" height="315" src="https://www.youtube.com/embed/BIYIDnyggwQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="clip"><iframe width="400" height="315" src="https://www.youtube.com/embed/BIYIDnyggwQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="clip"><iframe width="400" height="315" src="https://www.youtube.com/embed/BIYIDnyggwQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="clip"><iframe width="400" height="315" src="https://www.youtube.com/embed/BIYIDnyggwQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="clip"><iframe width="400" height="315" src="https://www.youtube.com/embed/BIYIDnyggwQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="clip"><iframe width="400" height="315" src="https://www.youtube.com/embed/BIYIDnyggwQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="clip"><iframe width="400" height="315" src="https://www.youtube.com/embed/BIYIDnyggwQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="clip"><iframe width="400" height="315" src="https://www.youtube.com/embed/BIYIDnyggwQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </div>
             </div>  
        </div>
        
        <!--푸터-->
        <div id="footer" include-html="common/footer.html">
            <div id="copyright">
-                <div id="copyright_logo"><img src=""></div>
-                <div id="info">
-                    <div>만든놈 - 주소 - 기타 등등</div>
-                    <div>Copyright © 2019. Pulseless. All rights reserve.</div>
-                </div>
+                <div>Copyright © 2019. Made by Pulseless. All rights reserve.</div>
             </div>
        </div>
    </div>
