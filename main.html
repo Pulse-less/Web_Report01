@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Number.1 SKT1 Fan Page</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <!--<script src="js/swiper/swiper.jquery.umd.js"></script>-->
+    <script>
+        $(document).ready(function(){
+           /* $("#header").load("common/topMenu.html"); 
+            $("#footer").load("common/footer.html");*/
+        
+            //swiper 설정
+            var mySwiper = new Swiper('.swiper-container',{
+                speed: 400,
+                spaceBetween:100,
+                grabCursor: true,
+                direction: 'horizontal',
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                // And if we need scrollbar
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+            })
+        });
+    </script>
+    <!--<link href="js/swiper/swiper.jquery.min.js"/>-->
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/layout.css"/>
+</head>
+<body>
+   <!--메인 컨테이너-->
+   <div id="container">
+      
+       <!--헤더-->
+       <div id="header" include-html="common/topMenu.html">
+          
+           <div id="top_container">
+                <div id="topMenuBox_1">
+                   <div id="topMenuBox">
+                        <!--logo-->
+                        <div id="logo" onclick=""><img src=""></div>
+                        <!--menuBtn-->
+                        <div id="topMenuBtnBox">
+                            <div class="topMenuBtn">커뮤니티</div>
+                            <div class="topMenuBtn">소개</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="topMenuBox_2">
+                    <!--모바일용 메뉴-->
+                    <div id="mobileTopMenu" class="spinnerMaster mr5">
+                        <input type="checkbox" id="spinnerForm" />
+                        <label for="spinnerForm" class="spinnerSpin" onclick="mobileMenuClick();">
+                            <div class="spinner diagonal part-1"></div>
+                            <div class="spinner horizontal"></div>
+                            <div class="spinner diagonal part-2"></div>
+                        </label>
+                    </div>
+                    <div id="subMenuNavBox">
+                        <div id="subMenuNav_1" class="subMenuNav">
+                            <span>자유 게시판</span>
+                            <span>갤러리</span>
+                        </div>
+                        <div id="subMenuNav_2" class="subMenuNav">
+                            <span>만든이 소개</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+       </div>
+       
+       <!--컨텐츠-->
+       <div id="contents">
+           <div id="slider_section">
+               <div id="commonImgLayerMain">
+                   <div class="swiper-container">
+                       <div class="swiper-wrapper">
+                           <div class="swiper-slide"><img src="image/t1_roster_1.jpg"></div>
+                           <div class="swiper_slide"><img src="image/t1_roster_2.jpg"></div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+           </div>
+           
+           <div id="introduce_section">
+               <div class="section">
+                   <div class="introduce_entry">
+                       <h1 class="section-title">팀 소개 타이틀</div>
+                       <p>첫번째 특징 설명문 어쩌구저쩌구</p>
+                       <img src="http://file.thisisgame.com/upload/nboard/news/2014/04/04/20140404111811_7782.jpg"/>
+                   </div>
+               </div>
+           </div>
+           
+           <div id="video_section">
+               <div class="section">
+                   <div id="video_entry">
+                       <div class="clip"><iframe width="370" height="315" src="https://www.youtube.com/embed/BIYIDnyggwQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                       <div class="clip"><iframe width="370" height="315" src="https://www.youtube.com/embed/BIYIDnyggwQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                       <div class="clip"><iframe width="370" height="315" src="https://www.youtube.com/embed/BIYIDnyggwQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                       <div class="clip"><iframe width="370" height="315" src="https://www.youtube.com/embed/BIYIDnyggwQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                   </div>
+               </div>
+            </div>  
+       </div>
+       
+       <!--푸터-->
+       <div id="footer" include-html="common/footer.html">
+           <div id="copyright">
+                <div id="copyright_logo"><img src=""></div>
+                <div id="info">
+                    <div>만든놈 - 주소 - 기타 등등</div>
+                    <div>Copyright © 2019. Pulseless. All rights reserve.</div>
+                </div>
+            </div>
+       </div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,164 @@
+@charset "uft-8";
+
+/*
+All device
+*/
+
+#container{
+    min-width:320px;
+    max-width:100%;
+    background-color:#f2f2f2;
+    margin:0px auto;
+    padding: 0px;
+}
+
+#top_container{
+    clear:both;
+	padding:0px;
+	margin:0px auto;
+	min-height:100px;
+	background-color:#ffffff;
+}
+
+#contents{
+    clear:both;
+	padding:0px;
+	margin:0px;
+	min-height:100px;
+	background-image:url("../image/bgPattern.jpg");
+}
+
+#slider_section{
+    margin:10px 0 10px 0;
+}
+
+#introduce_section{
+    clear:both;
+	padding:0px;
+	min-height:100px;
+    text-align:center;
+}
+
+#video_section{
+    clear:both;
+	padding:0px;
+	margin:10px 0 10px 0;
+	min-height:100px;
+    text-align:center;
+}
+
+#copyright{
+    background-color:#dddddd;
+    text-align: center;
+}
+
+/* Desktop device */
+@media all and (min-width:768px){   
+    td > textarea {
+		width:100%;
+	}
+	
+	.spinnerMaster {
+		display:none;
+	}
+    
+    #topMenuBox_1{
+        background-color:#00eeff;
+        height:40px;
+    }
+
+    #topMenuBox_2{
+        background-color:#eeeeee;
+        height:63px;
+    }
+    
+    #topMenuBtnBox {
+		float:right;
+        margin-top:39px;
+	}
+    
+    #logo{
+        float:left;
+        width:200px;
+        height:70px;
+        cursor:pointer;
+    }
+    
+    #logo > img {
+        height:50px;
+        margin-top:10px;
+        margin-left:0px;
+    }
+    
+    .topMenuBtn{
+        float:left;
+        font-family:nseb;
+        font-size:20px;
+        color:#666666;
+        min-width:150px;
+        margin:0px;
+        margin-left:3px;
+        padding:25px 10px 13px 10px;
+        cursor:pointer;
+        text-align:center;
+    }
+    
+    .topMenuBtn:hover{
+        color:#0078c6;
+        border-bottom:3px solid #00B09E;
+    }
+    
+    .topMenuBtn.seleted{
+        color:#0078C6;
+        border-bottom:3px solid #00B09E;
+    }
+    
+    #subMenuNavBox{
+        clear:both;
+		max-width:1000px;
+		margin:0px auto;
+		padding:10px;
+		text-align:center;
+		height:34px;
+    }
+    
+    .subMenuNav{
+        text-align:right;
+        font-family: nsb;
+        font-size:14px;
+        display:none;
+    }
+    
+    .subMenuNav > span {
+        margin:0px 20px;
+    }
+    
+    #subMenuNav_1{
+        
+    }
+    
+    #subMenuNav_2{
+        
+    }
+    
+    #video_entry{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap:10px;
+        grid-auto-rows: minmax(100px, auto);
+        margin-top:20px;
+        text-align: center;
+    }
+}
+
+
+/* Mobile device */
+@media (max-width:768px){
+    #topMenuBox_1{
+
+    }
+
+    #topMenuBox_2{
+
+    }
+}
